@@ -12,7 +12,7 @@ function TodoTable(props) {
             </thead>
             <body>
                 {props.todos.map(todo => (
-                    <TodoRowComponent 
+                    <TodoRowItem 
                         key={todo.rowNumber} 
                         rowNumber={todo.rowNumber}
                         rowDescription={todo.rowDescription} 
