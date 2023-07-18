@@ -10,7 +10,7 @@ function TodoTable(props) {
                     <th scope="col">Assigned</th>
                 </tr>
             </thead>
-            <body>
+            <tbody>
                 {props.todos.map(todo => (
                     <TodoRowItem 
                         key={todo.rowNumber} 
@@ -20,7 +20,7 @@ function TodoTable(props) {
                         deleteTodo={todo.deleteTodo} 
                     />
                 ))}
-            </body>
+            </tbody>
         </table>
     );
 }
